@@ -20,6 +20,7 @@ public class ParseInit extends Application {
     public void onCreate() {
         super.onCreate();
 
+
         Fresco.initialize(this);
 
         Parse.initialize(new Parse.Configuration.Builder(this)

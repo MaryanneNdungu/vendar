@@ -23,5 +23,14 @@
         <attr name="registerIcon" format="reference" />
 
         <attr name="registerEnabled" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="BezierLoadingView">
+        <attr name="lv_external_radius" format="dimension"/>
+        <attr name="lv_internal_radius" format="dimension"/>
+        <attr name="lv_duration" format="integer"/>
+        <attr name="lv_start_color" format="color"/>
+        <attr name="lv_end_color" format="color"/>
     </declare-styleable>
 </resources>

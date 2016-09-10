@@ -72,7 +72,7 @@ public class MaterialLoginView extends FrameLayout {
 
     private void init(Context context, AttributeSet attrs) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        inflater.inflate(R.layout.login_view, this, true);
+        inflater.inflate(R.layout.login, this, true);
 
         loginView = findViewById(R.id.login_window);
         loginCard = findViewById(R.id.login_card);

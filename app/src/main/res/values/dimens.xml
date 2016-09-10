@@ -32,4 +32,7 @@
     <dimen name="dimen_48dp">48dp</dimen>
     <dimen name="dimen_56dp">56dp</dimen>
 
+    <dimen name="activity_horizontal_margin_double">32dp</dimen>
+    <dimen name="activity_min_item_height">56dp</dimen>
+    <dimen name="navigation_drawer_width">280dp</dimen>
 </resources>

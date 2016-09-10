@@ -8,9 +8,9 @@
     <string name="name">Name</string>
     <string name="password">Password</string>
     <string name="go">GO</string>
-    <string name="register">REGISTER</string>
+    <string name="register">Add More Details</string>
     <string name="repeat_password">Repeat Password</string>
-    <string name="next">NEXT</string>
+    <string name="next">SUBMIT</string>
 
     <string name="squarecamera__app_name">SquareCamera</string>
     <string name="squarecamera__action_settings">Settings</string>
@@ -27,5 +27,12 @@
     <string name="squarecamera__done">Done</string>
     <string name="squarecamera__request_write_storage_permission_text">Approval is needed to save your photo on your device</string>
     <string name="title_activity_upload"></string>
+
+    <string name="not_remember">Non la ricordi più?</string>
+    <string name="pass_forget">RECUPERA PASSWORD</string>
+    <string name="insert_email_login">Insert your email:</string>
+    <string name="not_registered_login">Not registered yet?</string>
+    <string name="registrati">REGISTER NOW</string>
+
 
 </resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:lv="http://schemas.android.com/tools">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/drawee"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:fadeDuration="300"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <AutoCompleteTextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Item Title"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_horizontal_margin">
+
+
+            <AutoCompleteTextView
+                android:layout_weight="1"
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Price"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_below="@+id/email"
+                android:layout_alignParentStart="true" />
+
+            <AutoCompleteTextView
+                android:layout_weight="1"
+                android:id="@+id/autoCompleteTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Price"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_below="@+id/email"
+                android:layout_alignParentEnd="true" />
+
+        </LinearLayout>
+
+        <io.vaxly.venda.utils.LoadingView
+            android:id="@+id/loading_view"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/layoutFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:textColor="@color/material_login_register_color"
+                android:textSize="32sp"
+                android:layout_gravity="center"
+                android:layout_below="@+id/layoutFirst"
+                android:layout_toEndOf="@+id/progressBarFirst" />
+
+            <Button
+                android:id="@+id/buttonRegistra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="32dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/material_login_register_color"
+                android:textSize="24sp"
+                android:layout_gravity="center_horizontal|bottom" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
