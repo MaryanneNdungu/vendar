@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GridLayoutAttrs">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="numColumns" format="integer" />
+        <attr name="numRows" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialLoginView">
+        <attr name="loginTitle" format="string" />
+        <attr name="loginHint" format="string" />
+        <attr name="loginPasswordHint" format="string" />
+        <attr name="loginActionText" format="string" />
+        <attr name="loginTextColor" format="reference" />
+
+        <attr name="registerTitle" format="string" />
+        <attr name="registerHint" format="string" />
+        <attr name="registerPasswordHint" format="string" />
+        <attr name="registerRepeatPasswordHint" format="string" />
+        <attr name="registerActionText" format="string" />
+        <attr name="registerTextColor" format="reference" />
+        <attr name="registerIcon" format="reference" />
+
+        <attr name="registerEnabled" format="boolean" />
+    </declare-styleable>
+</resources>

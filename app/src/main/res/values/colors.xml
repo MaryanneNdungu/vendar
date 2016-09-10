@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#605271</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#9f90af</color>
+
+    <color name="material_login_login_color">#9f90af</color>
+    <color name="material_login_register_color">#f9bb72</color>
+    <color name="material_login_login_error_color">#76afcf</color>
+    <color name="material_login_register_error_color">#dd6495</color>
+    <color name="material_login_login_text_color">#000</color>
+    <color name="material_login_register_text_color">#000</color>
+</resources>
