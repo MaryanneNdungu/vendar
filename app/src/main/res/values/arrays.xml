@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="money">
+        <item>Euro (€)</item>
+        <item>USD ($)</item>
+        <item>POUND (£)</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>Pick category</item>
+        <item>Electronics</item>
+        <item>Games &amp; Console</item>
+        <item>Books &amp; Music</item>
+        <item>Clothing &amp; Fashion</item>
+        <item>Cars &amp; Motors</item>
+        <item>Sports &amp; Leisure</item>
+        <item>Home &amp; Garden</item>
+    </string-array>
+
+    <string-array name="conditions">
+        <item>Choose Condition</item>
+        <item>New</item>
+        <item>Almost new</item>
+        <item>Good</item>
+        <item>Satisfactory</item>
+        <item>Poor</item>
+    </string-array>
+</resources>

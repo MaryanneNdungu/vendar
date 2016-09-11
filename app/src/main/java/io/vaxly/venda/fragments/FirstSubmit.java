@@ -1,18 +1,3 @@
-/*
- * Copyright 2016 Unipiazza
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- */
 package io.vaxly.venda.fragments;
 
 import android.content.Context;
@@ -31,12 +16,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.AutoCompleteTextView;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.backends.pipeline.PipelineDraweeController;
@@ -60,7 +49,7 @@ public class FirstSubmit extends Fragment {
     private static final int MY_PERMISSIONS_REQUEST_GET_ACCOUNTS = 123;
 
     private TwoStepsListener mListener;
-    private AutoCompleteTextView email;
+    private EditText email;
     private Submit mtsl;
     private Button next;
     private ProgressBar progressBarFirst;
@@ -71,8 +60,9 @@ public class FirstSubmit extends Fragment {
     private Button buttonRegistra;
     private SimpleDraweeView draweeView;
     private  Point mSize;
-    LoadingView loadingView;
+    private LoadingView loadingView;
     private Bitmap bitmap;
+    private Spinner spinner;
 
     @Nullable
     @Override
@@ -80,13 +70,32 @@ public class FirstSubmit extends Fragment {
         super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.first_submit, null);
 
-        email = (AutoCompleteTextView) view.findViewById(R.id.email);
+        email = (EditText) view.findViewById(R.id.email);
         next = (Button) view.findViewById(R.id.buttonNext);
         progressBarFirst = (ProgressBar) view.findViewById(R.id.progressBarFirst);
         layoutFirst = (LinearLayout) view.findViewById(R.id.layoutFirst);
         buttonRegistra = (Button) view.findViewById(R.id.buttonRegistra);
         draweeView = (SimpleDraweeView) view.findViewById(R.id.drawee);
         loadingView = (LoadingView) view.findViewById(R.id.loading_view);
+
+
+        spinner = (Spinner) view.findViewById(R.id.moneyspinner);
+        String[] list = getResources().getStringArray(R.array.money);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_dropdown_item_1line, list);
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String currency = parent.getItemAtPosition(position).toString();
+                Toast.makeText(getContext(), currency, Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
 
         loadingView.start();
         if (mtsl != null) {
@@ -186,8 +195,6 @@ public class FirstSubmit extends Fragment {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                progressBarFirst.setVisibility(View.VISIBLE);
-                layoutFirst.setVisibility(View.GONE);
                 mListener.onNextClicked(email.getText().toString());
                 InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(
                         Context.INPUT_METHOD_SERVICE);
@@ -216,7 +223,6 @@ public class FirstSubmit extends Fragment {
         progressBarFirst.setVisibility(View.GONE);
         layoutFirst.setVisibility(View.VISIBLE);
     }
-
 
 
 }
