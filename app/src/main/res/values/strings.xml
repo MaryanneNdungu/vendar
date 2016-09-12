@@ -33,6 +33,8 @@
     <string name="insert_email_login">Insert your email:</string>
     <string name="not_registered_login">Not registered yet?</string>
     <string name="registrati">REGISTER NOW</string>
+    <string name="itemTitle">Item Title</string>
+    <string name="itemPrice">Item Price</string>
 
 
 </resources>

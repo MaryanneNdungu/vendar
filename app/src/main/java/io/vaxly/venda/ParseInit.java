@@ -13,7 +13,7 @@ import com.parse.interceptors.ParseLogInterceptor;
 public class ParseInit extends Application {
 
     private static String APPID = "MyAppId";
-    private static String APPURL = "https://vaxly.io/parse/";
+    private static String APPURL = "http://benson.fi/parse/";
 
     @Override
 

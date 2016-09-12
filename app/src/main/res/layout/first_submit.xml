@@ -17,6 +17,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:orientation="vertical">
 
             <io.vaxly.venda.utils.LoadingView
@@ -33,21 +34,30 @@
                 android:layout_marginTop="64dp"
                 android:padding="@dimen/activity_horizontal_margin">
 
+
                 <com.github.florent37.materialtextfield.MaterialTextField
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="20dp"
+                    app:mtf_cardCollapsedHeight="4dp"
+                    app:mtf_labelColor="@color/loading_head"
+                    app:mtf_openKeyboardOnFocus="true">
 
                     <EditText
                         android:id="@+id/email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Item Title"
+                        android:inputType="textShortMessage"
+                        android:hint="@string/itemTitle"
+                        android:singleLine="true"
                         android:textColor="#333"
                         android:textColorHint="#666"
-                        android:textSize="18sp" />
+                        android:textSize="24sp" />
 
                 </com.github.florent37.materialtextfield.MaterialTextField>
-
 
             </LinearLayout>
 
@@ -57,35 +67,33 @@
                 android:orientation="horizontal"
                 android:padding="@dimen/activity_horizontal_margin">
 
-
                 <com.github.florent37.materialtextfield.MaterialTextField
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="20dp"
+                    app:mtf_cardCollapsedHeight="4dp"
+                    app:mtf_labelColor="@color/loading_head"
+                    app:mtf_image="@drawable/euro"
+                    app:mtf_openKeyboardOnFocus="true">
 
                     <EditText
                         android:id="@+id/Price"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:hint="Price"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="@string/itemPrice"
+                        android:singleLine="true"
                         android:textColor="#333"
                         android:textColorHint="#666"
-                        android:textSize="18sp" />
+                        android:textSize="20sp" />
 
                 </com.github.florent37.materialtextfield.MaterialTextField>
 
 
-
-                <Spinner
-                    android:layout_weight="2"
-                    android:spinnerMode="dropdown"
-                    android:id="@+id/moneyspinner"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:popupBackground="@color/material_login_register_color"
-                    android:layout_gravity="center"
-                    android:layout_alignParentStart="true"/>
 
                 <Button
                     android:layout_weight="1"
@@ -95,9 +103,7 @@
                     android:text="@string/next"
                     android:textColor="@color/material_login_register_color"
                     android:textSize="32sp"
-                    android:layout_gravity="center"
-                    android:layout_below="@+id/layoutFirst"
-                    android:layout_toEndOf="@+id/progressBarFirst" />
+                    android:layout_gravity="center" />
 
             </LinearLayout>
 

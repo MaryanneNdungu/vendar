@@ -62,7 +62,6 @@ public class FirstSubmit extends Fragment {
     private  Point mSize;
     private LoadingView loadingView;
     private Bitmap bitmap;
-    private Spinner spinner;
 
     @Nullable
     @Override
@@ -72,29 +71,13 @@ public class FirstSubmit extends Fragment {
 
         email = (EditText) view.findViewById(R.id.email);
         next = (Button) view.findViewById(R.id.buttonNext);
-        progressBarFirst = (ProgressBar) view.findViewById(R.id.progressBarFirst);
         layoutFirst = (LinearLayout) view.findViewById(R.id.layoutFirst);
         buttonRegistra = (Button) view.findViewById(R.id.buttonRegistra);
         draweeView = (SimpleDraweeView) view.findViewById(R.id.drawee);
         loadingView = (LoadingView) view.findViewById(R.id.loading_view);
 
 
-        spinner = (Spinner) view.findViewById(R.id.moneyspinner);
-        String[] list = getResources().getStringArray(R.array.money);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_dropdown_item_1line, list);
-        spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String currency = parent.getItemAtPosition(position).toString();
-                Toast.makeText(getContext(), currency, Toast.LENGTH_SHORT).show();
-            }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
 
 
         loadingView.start();
