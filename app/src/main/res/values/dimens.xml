@@ -35,4 +35,9 @@
     <dimen name="activity_horizontal_margin_double">32dp</dimen>
     <dimen name="activity_min_item_height">56dp</dimen>
     <dimen name="navigation_drawer_width">280dp</dimen>
+
+    <!--InstaMaterial -->
+    <dimen name="user_profile_avatar_size">88dp</dimen>
+    <dimen name="btn_fab_margins">16dp</dimen>
+    <dimen name="default_elevation">8dp</dimen>
 </resources>

@@ -13,4 +13,12 @@
 
     <color name="loading_head">#f9bb72</color>
     <color name="loading_tail">#f9bb72</color>
+
+    <!--InstaMaterial -->
+    <color name="btn_send_normal">#02c754</color>
+    <color name="btn_send_pressed">#006633</color>
+    <color name="insta_color_primary">#2d5d82</color>
+    <color name="insta_color_primary_dark">#21425d</color>
+    <color name="insta_color_accent">#01bcd5</color>
+    <color name="insta_color_pressed">#007787</color>
 </resources>

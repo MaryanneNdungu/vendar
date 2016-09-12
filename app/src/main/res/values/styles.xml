@@ -7,9 +7,18 @@
         <item name="colorAccent">#f9bb72</item>
     </style>
 
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--InstaMaterial -->
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/insta_color_primary</item>
+        <item name="colorPrimaryDark">@color/insta_color_primary_dark</item>
+        <item name="colorAccent">@color/insta_color_accent</item>
+        <item name="colorControlHighlight">@color/insta_color_pressed</item>
+    </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
