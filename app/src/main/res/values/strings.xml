@@ -37,7 +37,9 @@
     <string name="squarecamera__done">Done</string>
     <string name="squarecamera__request_write_storage_permission_text">Approval is needed to save your photo on your device</string>
     <string name="title_activity_upload"></string>
-
+    <string name="section_1">Section 1</string>
+    <string name="some_informations">Description</string>
+    <string name="section_2">Section 2</string>
 
 
 </resources>

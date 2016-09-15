@@ -3,7 +3,7 @@ package io.vaxly.venda.models;
 /**
  * Created by vax on 14.9.2016.
  */
-public class Listings {
+public class Listings  {
 
     private  String price;
     private  String title;
@@ -13,6 +13,7 @@ public class Listings {
     private  String imageUrl;
     private  String sellerId;
     private  String sellerName;
+
 
     public String getPrice() {
         return price;

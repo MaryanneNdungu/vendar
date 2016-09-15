@@ -88,4 +88,9 @@
         <item name="android:windowDisablePreview">true</item>
         <item name="android:windowIsFloating">true</item>
     </style>
+
+
+    <style name="TransparentText">
+        <item name="android:textColor">@color/transparent_white</item>
+    </style>
 </resources>

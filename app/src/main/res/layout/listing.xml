@@ -6,18 +6,39 @@
     xmlns:fresco="http://schemas.android.com/tools">
 
     <android.support.v7.widget.CardView
-        android:id="@+id/placeCard"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         card_view:cardElevation="4dp"
         card_view:cardUseCompatPadding="true"
         card_view:cardCornerRadius="5dp">
 
         <com.facebook.drawee.view.SimpleDraweeView
-            android:id="@+id/placeImage"
+            android:id="@+id/thumbnail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             fresco:placeholderImage="@drawable/my_drawable" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="5dp">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/covering_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:transitionName="headerTransition"
+            fresco:placeholderImage="@drawable/my_drawable" />
+
+
+
+
 
     </android.support.v7.widget.CardView>
 

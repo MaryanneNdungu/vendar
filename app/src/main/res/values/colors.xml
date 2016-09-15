@@ -13,5 +13,6 @@
 
     <color name="loading_head">#f9bb72</color>
     <color name="loading_tail">#f9bb72</color>
+    <color name="semi_transparent_white">#AAFFFFFF</color>
 
 </resources>
