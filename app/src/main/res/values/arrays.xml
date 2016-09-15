@@ -7,7 +7,6 @@
     </string-array>
 
     <string-array name="categories">
-        <item>Pick category</item>
         <item>Electronics</item>
         <item>Games &amp; Console</item>
         <item>Books &amp; Music</item>
@@ -18,7 +17,6 @@
     </string-array>
 
     <string-array name="conditions">
-        <item>Choose Condition</item>
         <item>New</item>
         <item>Almost new</item>
         <item>Good</item>

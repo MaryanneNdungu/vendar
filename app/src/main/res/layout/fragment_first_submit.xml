@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:lv="http://schemas.android.com/tools">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="16dp"
+                app:mtf_cardCollapsedHeight="4dp"
+                app:mtf_labelColor="@color/colorAccent"
+                app:mtf_openKeyboardOnFocus="true">
+
+                <EditText
+                    android:id="@+id/itemTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textShortMessage"
+                    android:hint="@string/itemTitle"
+                    android:singleLine="true"
+                    android:textColor="#333"
+                    android:textColorHint="#666"
+                    android:textSize="24sp" />
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                app:mtf_cardCollapsedHeight="4dp"
+                app:mtf_labelColor="@color/colorAccent"
+                app:mtf_image="@drawable/euro"
+                app:mtf_openKeyboardOnFocus="true">
+
+                <EditText
+                    android:id="@+id/itemPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/itemPrice"
+                    android:singleLine="true"
+                    android:textColor="#333"
+                    android:textColorHint="#666"
+                    android:maxLength="4"
+                    android:textSize="20sp" />
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/buttonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/stroke"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+
+            <Button
+                android:id="@+id/buttonMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/more"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:background="@drawable/stroke"
+                android:layout_gravity="center" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

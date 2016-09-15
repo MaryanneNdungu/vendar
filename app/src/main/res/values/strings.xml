@@ -12,6 +12,16 @@
     <string name="repeat_password">Repeat Password</string>
     <string name="next">SUBMIT</string>
 
+
+    <string name="more">Add More Detail</string>
+    <string name="itemTitle">Item </string>
+    <string name="itemPrice">Price</string>
+    <string name="itemDescription">More Information</string>
+    <string name="submit">Submit</string>
+    <string name="itemCategory">Category</string>
+    <string name="itemCondition">Condition</string>
+
+
     <string name="squarecamera__app_name">SquareCamera</string>
     <string name="squarecamera__action_settings">Settings</string>
     <string name="squarecamera__start_image_capture">Take New Picture!</string>
@@ -28,13 +38,6 @@
     <string name="squarecamera__request_write_storage_permission_text">Approval is needed to save your photo on your device</string>
     <string name="title_activity_upload"></string>
 
-    <string name="not_remember">Non la ricordi più?</string>
-    <string name="pass_forget">RECUPERA PASSWORD</string>
-    <string name="insert_email_login">Insert your email:</string>
-    <string name="not_registered_login">Not registered yet?</string>
-    <string name="registrati">REGISTER NOW</string>
-    <string name="itemTitle">Item Title</string>
-    <string name="itemPrice">Item Price</string>
 
 
 </resources>

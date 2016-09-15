@@ -12,8 +12,8 @@ import com.parse.interceptors.ParseLogInterceptor;
  */
 public class ParseInit extends Application {
 
-    private static String APPID = "MyAppId";
-    private static String APPURL = "http://benson.fi/parse/";
+    private static String APPID = "venda";
+    private static String APPURL = "http://5.189.168.22:1337/parse/";
 
     @Override
 
